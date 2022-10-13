@@ -5,11 +5,11 @@ function App() {
   // props === properties
   // propsy działają tylko w dół
   const propToPassDown = 5;
-  const y = "test"
+  const y = "test";
   return (
     <div className="App">
-      <Display jakisProps={propToPassDown} x="5" jakisProps2={y}/>
-      
+      <Display jakisProps={propToPassDown} x="5" jakisProps2={y} />
+
       <Manipulator />
     </div>
   );

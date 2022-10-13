@@ -1,5 +1,5 @@
 import React from "react";
-
+import { DisplayProps } from "../../helpers/interfaces";
 // {
 //   jakisProps: 5,
 //   x: "5",
@@ -12,16 +12,18 @@ import React from "react";
 //   jakisProps2: string;
 // }) => {
 
+// FC = functional component
 
 
-const Display = (props) => {
+const Display: React.FC<DisplayProps> = ({ jakisProps, x, jakisProps2 }) => {
+
   const generateRandomNumber = () => {
     return Math.random();
   };
 
-  console.log(props.jakisProps);
-  console.log(props.x);
-  console.log(props.jakisProps2);
+  console.log(jakisProps);
+  console.log(x);
+  console.log(jakisProps2);
   return (
     <>
       <p>{generateRandomNumber()}</p>
