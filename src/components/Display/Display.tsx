@@ -14,20 +14,16 @@ import { DisplayProps } from "../../helpers/interfaces";
 
 // FC = functional component
 
-
-const Display: React.FC<DisplayProps> = ({ jakisProps, x, jakisProps2 }) => {
-
+const Display: React.FC<DisplayProps> = ({ propToPassDown }) => {
   const generateRandomNumber = () => {
     return Math.random();
   };
 
-  console.log(jakisProps);
-  console.log(x);
-  console.log(jakisProps2);
+  console.log(propToPassDown);
   return (
     <>
       <p>{generateRandomNumber()}</p>
-      <p>0</p>
+      <p>{propToPassDown}</p>
     </>
   );
 };
