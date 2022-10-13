@@ -40,8 +40,8 @@ function App() {
 
   return (
     <div className="App">
-      <Display propToPassDown={propToPassDown} />
-      <Manipulator />
+      <Display count={count} />
+      <Manipulator setCount={setCount} />
     </div>
   );
 }
